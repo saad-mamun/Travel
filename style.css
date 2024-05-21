@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+
+}
+#logo{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    & img{
+        width: 150px;
+    }
+}
+
+.navbar-toggler span{
+    color: #fca311;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    color: black;
+    letter-spacing: 1px;
+    font-size: 18px;
+    border-radius: 3px;
+}
+.nav-item .nav-link:hover{
+    color: #fff;
+    background-color: #fca311;
+}
+
+#navbar form button{
+    color: white;
+    background-color: #fca311;
+    border: none;
+}
+
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/background\ img.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px black;
+}
+.home .content h1{
+    font-size: 70px;
+    color: #fff;
+    text-shadow: 0 1px 1px black;
+    margin-top: 5px;
+}
+.home .content h1::after{
+    content: "";
+    color: #fca311;
+    text-shadow: 0 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext{
+    0%{content: "India";}
+    10%{content: "Bangladesh";}
+    30%{content: "Finland";}
+    40%{content: "Russia";}
+    50%{content: "Canada";}
+    60%{content: "Germany";}
+    70%{content: "Nepal";}
+    80%{content: "Norway";}
+   90%{content: "United State";}
+   100%{content: "London";}
+}
+
+.home .content p{
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 0 1px 1px black;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.home .content a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 25px;
+    font-size: 20px;
+    font-weight: 550;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+
+.home .content a:hover{
+    background-color: #fca311;
+    color: #fff;
+}
+
+@media (max-width:850px){
+    .content{
+        background-position: 50%;
+    }
+}
+
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 27px;
+    }
+
+    .home .content h1{
+        font-size: 35px;
+    }
+
+    .home .content p{
+        font-size: 16px;
+    }
+}
+
+/* book section */
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    letter-spacing: 1px;
+    width: 160px;
+    font-size: 17px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 180px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+/* book section */
+
+/* packages section */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #ffa500;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+/* packages section */
+
+/* service section */
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+/* service section */
+
+/* gallery section */
+.gallery{
+    margin-top: 50px;
+}
+.gallery .card{
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.gallery .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallery .card img:hover{
+    transform: scale(1.05);
+}
+/* gallery section */
+
+/* about section */
+.about{
+    background-color: #f9f9f9;
+    padding: 50px;
+    margin-top: 50px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+
+.about .card h1{
+    font-weight: 600;
+}
+.about .card p{
+    letter-spacing: 1px;
+}
+
+.about #btn{
+    padding: 6px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #fca311;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+.about #btn:hover{
+    padding: 6px 30px;
+}
+#footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+    background-color: #f9f9f9;
+}
+
+#footer h1 span{
+    color: #fca311;
+}
+#footer p{
+    margin-bottom: 20px;
+
+}
+#footer .social-link a{
+    color: black;
+    font-size: 25px;
+    padding: 2px 10px;
+}
+
+#footer .creadit{
+    font-size: 20px;
+    margin: 20px;
+}
+
+#footer .copyright{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+/* about section */
